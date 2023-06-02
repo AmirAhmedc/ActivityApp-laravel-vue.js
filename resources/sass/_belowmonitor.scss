@@ -1,0 +1,13 @@
+.below {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+
+    & button {
+        font-size: 1.1rem;
+    }
+  }

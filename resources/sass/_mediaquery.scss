@@ -1,0 +1,86 @@
+
+@media all and (min-width: 960px) {
+    #monitor {
+      -webkit-animation: tvflicker .2s infinite alternate; 
+      -moz-animation:    tvflicker .5s infinite alternate; 
+      -o-animation:      tvflicker .5s infinite alternate; 
+      animation:         tvflicker .5s infinite alternate; 
+    }
+  
+    @-webkit-keyframes tvflicker {
+      0%   { box-shadow: 0 0 100px 0 rgba(200,235,255,0.4); }
+      100% { box-shadow: 0 0 95px 0 rgba(200,230,255,0.45); }
+    }
+    @-moz-keyframes tvflicker {
+      0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+      100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+    }
+    @-o-keyframes tvflicker {
+      0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+      100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+    }
+    @keyframes tvflicker {
+      0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+      100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+    }
+  }
+  
+  /*  */
+  @media only screen and (max-width: 1024px) {
+    /* Adjust the layout for screens smaller than 1024px */
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left,
+    .right,
+    .center {
+      flex: 1;
+      width: 100%;
+    }
+    .left{
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-end;
+      text-align: center;
+      & .btn-right{
+        margin: 0;
+      }
+    }
+    #container {
+      margin: 20px 0;
+      width: 100%;
+    }
+  
+    #monitor {
+      margin-right: 0;
+    }
+    form{
+      width: 100%;
+    }
+    .inputs-form {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* Adjust the layout for screens smaller than 768px */
+    #monitorscreen {
+      padding-bottom: 75%;
+    }
+    .below{
+      display: flex;
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    /* Adjust the layout for screens smaller than 576px */
+    .input-groupcustom-file {
+      margin-top: 10px;
+    }
+    
+  }

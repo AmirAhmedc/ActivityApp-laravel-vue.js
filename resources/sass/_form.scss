@@ -1,0 +1,71 @@
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    margin-top: 1.3rem;
+    form {
+      margin-bottom: 20px;
+    }
+}
+
+.inputs-form {
+    display: block;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .btn-box{
+    flex: 1;
+    margin-bottom: 1.2rem;
+  }
+  .input-group {
+    // display: flex;
+    font-size: 2rem;
+    // align-items: center;
+  
+    label.color1 {
+      cursor: pointer;
+      color: #2D270B;
+  
+      &:hover {
+        color: #352e11;
+      }
+    }
+  
+    label.color2 {
+      cursor: pointer;
+      color: #262A56;
+  
+      &:hover {
+        color: #2d3268;
+      }
+    }
+  }
+  
+
+  .upload-button {
+    color: #2c6373;
+    margin: 4px 2px;
+    border-radius: 5px;
+  
+    &:hover {
+      color: #4974a1;
+    }
+  }
+  
+  .download-button {
+    background: none;
+    border: none;
+    color: #28A75E;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  
+    &:hover {
+      color: #28a745;
+    }
+  }

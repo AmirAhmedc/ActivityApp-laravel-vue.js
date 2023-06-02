@@ -1,0 +1,27 @@
+body {
+  background-color: #ffffff;
+}
+
+button {
+  font-size: 2rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+
+.center {
+  flex: 3;
+  margin: 6px 36px 15px;
+
+}
+

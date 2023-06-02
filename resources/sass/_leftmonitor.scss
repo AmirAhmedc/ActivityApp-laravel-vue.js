@@ -1,0 +1,29 @@
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex: 1;
+
+    & .btn-left{
+        flex: 1;
+    }
+    & .btn-right{
+        flex: 1;
+        margin: 1.3rem 0 1.3rem;
+    }
+    & .btn-reset{
+        flex: 1;
+        margin-top: 3rem;
+
+    }
+        
+    & .rotate-button{
+        font-size: 1.8rem;
+    }
+    & .reset-button{
+        font-size: 1.8rem;
+    }
+
+  }
+
