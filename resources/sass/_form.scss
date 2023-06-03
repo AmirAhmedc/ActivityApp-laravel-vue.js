@@ -29,43 +29,43 @@
   
     label.color1 {
       cursor: pointer;
-      color: #2D270B;
+      color: #352e11db;
   
       &:hover {
-        color: #352e11;
+        color: #2D270B;
       }
     }
   
     label.color2 {
       cursor: pointer;
-      color: #262A56;
+      color: #262a56d9;
   
       &:hover {
-        color: #2d3268;
+        color: #262A56;
       }
     }
   }
   
 
   .upload-button {
-    color: #2c6373;
+    color: #2c6373d6;
     margin: 4px 2px;
     border-radius: 5px;
   
     &:hover {
-      color: #4974a1;
+      color: #2c6373;
     }
   }
   
   .download-button {
     background: none;
     border: none;
-    color: #28A75E;
+    color: #1a915ad1;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
   
     &:hover {
-      color: #28a745;
+      color: #1a915a;
     }
   }
