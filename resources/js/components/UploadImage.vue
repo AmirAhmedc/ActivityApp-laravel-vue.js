@@ -2,10 +2,10 @@
   <div class="wrapper">
     <div class="left">
       <div class="btn-left">
-        <button class="rotate-button" @click="rotateLeft"><i class="fa fa-rotate-left fa-2x"></i></button>
+        <button class="rotate-button" @click="rotateLeft" :disabled="!backgroundImage && !foregroundImage"><i class="fa fa-rotate-left fa-2x"></i></button>
       </div>
       <div class="btn-right">
-        <button class="rotate-button" @click="rotateRight"><i class="fa fa-rotate-right fa-2x"></i></button>
+        <button class="rotate-button" @click="rotateRight" :disabled="!backgroundImage && !foregroundImage"><i class="fa fa-rotate-right fa-2x"></i></button>
       </div>
       <div class="btn-reset">
         <button type="button" class="reset-button" @click="resetCanvas">
@@ -50,10 +50,10 @@
                 class="fa fa-camera fa-2x text-primary"></i></label>
           </div>
           <div class="btn-box">
-            <button type="submit" class="upload-button"><i class="fa fa-upload fa-2x text-primary"></i></button>
+            <button type="submit" class="upload-button" :disabled="!backgroundImage || !foregroundImage"><i class="fa fa-upload fa-2x text-primary"></i></button>
           </div>
           <div class="btn-box">
-            <button class="download-button" @click="downloadImage"><i class="fa fa-download fa-2x text-primary"></i></button>
+            <button class="download-button" @click="downloadImage" :disabled="!backgroundImage || !foregroundImage"><i class="fa fa-download fa-2x text-primary"></i></button>
           </div>
         </div>
       </form>
@@ -62,16 +62,16 @@
   </div>
   <div class="below">
     <div class="below-icon">
-      <button class="size-button" @click="increaseWidth"><i class="fa fa-arrows-left-right fa-2x"></i></button>
+      <button class="size-button" @click="increaseWidth" :disabled="!backgroundImage && !foregroundImage"><i class="fa fa-arrows-left-right fa-2x"></i></button>
     </div>
     <div class="below-icon">
-      <button class="size-button" @click="decreaseWidth"><i class="fa fa-arrow-right fa-2x"></i></button>
+      <button class="size-button" @click="decreaseWidth" :disabled="!backgroundImage && !foregroundImage"><i class="fa fa-arrow-right fa-2x"></i></button>
     </div>
     <div class="below-icon">
-      <button class="size-button" @click="increaseHeight"><i class="fa fa-arrows-up-down fa-2x"></i></button>
+      <button class="size-button" @click="increaseHeight" :disabled="!backgroundImage && !foregroundImage"><i class="fa fa-arrows-up-down fa-2x"></i></button>
     </div>
     <div class="below-icon">
-      <button class="size-button" @click="decreaseHeight"><i class="fa fa-arrow-down fa-2x text-primary"></i></button>
+      <button class="size-button" @click="decreaseHeight" :disabled="!backgroundImage && !foregroundImage"><i class="fa fa-arrow-down fa-2x text-primary"></i></button>
     </div>
   </div>
 </template>
