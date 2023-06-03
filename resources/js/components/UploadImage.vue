@@ -262,6 +262,9 @@ export default {
       this.imgWidth = 1;
       this.imgHeight = 1;
       this.successMessage = null;
+
+      const formData = new FormData();
+
       // redraw canvas
       this.drawCanvas();
     },
